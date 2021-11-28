@@ -1,5 +1,7 @@
 
-def similarity(s1, s2, s = (lambda c1, c2: c1 == c2)):
+import operator
+
+def similarity(s1, s2, s = operator.eq):
     n = len(s1)
     m = len(s2)
     V = [[None] * (m + 1) for i in range(n + 1)]
