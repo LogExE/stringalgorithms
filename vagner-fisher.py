@@ -18,8 +18,8 @@ def levenstein_diff(s1, s2):
 def levenstein_diff_improved(s1, s2):
     n = len(s1)
     m = len(s2)
-    currow = [j for j in range(n + 1)]
-    nextrow = [None] * (n + 1)
+    currow = [j for j in range(m + 1)]
+    nextrow = [None] * (m + 1)
     
     for i in range(1, n + 1):
         nextrow[0] = i
