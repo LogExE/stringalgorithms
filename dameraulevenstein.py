@@ -23,9 +23,6 @@ def dameraulevenstein(s1, s2):
             if indf != 0 and inds != 0:
                 D[i][j] = min(D[i][j], D[inds - 1][indf - 1] + (i - inds - 1) + 1 + (j - indf - 1))
         lastIndex[s1[i - 1]] = i
-        
-
-    print(*D, sep = '\n')
 
     return D[n][m]
 
